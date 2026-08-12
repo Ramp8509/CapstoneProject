@@ -1,8 +1,13 @@
 # CapstoneProject
 AIMl Capstone Project
 
-Business Problem
+# Credit Card Fraud Detection Using Machine Learning
 
-Financial institutions process millions of transactions every day. Even though fraudulent transactions represent a tiny fraction of all transactions, they result in significant financial losses and damage customer trust.
+## Executive Summary
+This project builds an end-to-end machine learning pipeline to detect fraudulent credit card transactions from an imbalanced dataset (0.172% fraud rate).
 
-The goal of this project is to build a machine learning model that can accurately identify fraudulent credit card transactions while minimizing false positives, ensuring legitimate customer transactions are not unnecessarily blocked.
+## Dataset & Data Cleaning
+- Source: Kaggle Credit Card Fraud Detection Dataset
+- Initial Shape: 284,807 rows, 31 columns
+- Data Cleaning: Identified and removed 1,081 duplicate records, resulting in 283,726 clean records. No missing values were present.
+
