@@ -185,3 +185,10 @@ processed_data_path = project_root / "data" / "creditcard_processed.csv"
 df.to_csv(processed_data_path, index=False)
 
 print(f"Processed dataset saved to: {processed_data_path}")
+
+
+# Calculate and print explained variance
+var_ratio = pca.explained_variance_ratio_
+print(f"PC1 Explained Variance: {var_ratio[0]*100:.2f}%")
+print(f"PC2 Explained Variance: {var_ratio[1]*100:.2f}%")
+print(f"Total Retained Variance: {sum(var_ratio)*100:.2f}%")
